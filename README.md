@@ -102,4 +102,9 @@ To run this project on your computer you will need the following tools
     ```
 
 
-Project Link: [https://flyts-tshibs.000webhostapp.com/](Wenze)
+### Wenze Account Funding
+
+Use the code "A587FG412H" to fund your account with 310,000 Fc to be able to do tests.
+
+
+Project Link: [https://samytshibanda.com](Wenze)
