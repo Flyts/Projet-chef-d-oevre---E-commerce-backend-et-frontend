@@ -1,0 +1,285 @@
+
+section
+{
+	padding: 0 5%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+
+/*--- NEWS ---*/
+section #News
+{
+	width: 100%;
+	display: inline-block;
+}
+
+section #Pagination
+{
+	margin-bottom: 50px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+section #News h3
+{
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+
+section #News .Titre
+{
+	margin-bottom: 30px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+section #News .Titre h3
+{
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+
+	margin-left: 10px;
+}
+
+section #News .Titre .btns
+{
+	margin-right: 10px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+}
+
+section #News .Titre .btns span
+{
+	margin-left: 20px;
+	font-size: 20px;
+	cursor: pointer;
+	color: var(--bluegrey_f);
+
+	transition: .3s ease-in-out;
+}
+section #News .Titre .btns span:hover
+{
+	color: var(--orange_f);
+}
+
+#News .Product
+{
+	padding: 0 10px;
+	margin-bottom: 50px;
+}
+
+#News .Product article
+{
+	background-color: var(--white);
+	border-radius: 3px;
+
+	transition: .3s ease-in-out;
+}
+#News .Product article:hover
+{
+	box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
+}
+
+#News .Product article .options
+{
+	padding: 10px 15px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#News .Product article .options a
+{
+	color: var(--grey);
+
+	transition: .3s ease-in-out;
+}
+#News .Product article .options a:hover
+{
+	color: var(--orange_f);
+}
+
+#News .Product article .image_article
+{
+	padding: 0px 15px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#News .Product article .image_article .int
+{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	height: 100px;
+	width: 150px;
+
+}
+
+#News .Product article .describe
+{
+	margin: 20px 0; 
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#News .Product article .describe span:first-child
+{
+	color: var(--bluegrey_f);
+	font-weight: bold;
+	font-size: 10px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	margin: 0 15px;
+	height: 50px;
+	text-align: center;
+}
+
+#News .Product article .describe span:last-child
+{
+	color: var(--blue);
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+#News .Product article .describe span:last-child i
+{
+	display: inline-block;
+	color: var(--grey);
+	font-style: normal; 
+	font-size: 12px;
+	text-decoration: line-through;
+	display: block;
+	text-align: center;
+}
+#News .Product article .describe span:last-child strong
+{
+	display: inline-block;
+	color: var(--orange_f);
+	font-size: 14px;
+	font-weight: normal;
+	display: block;	
+	text-align: center;
+}
+
+
+#News .Product article .show
+{
+	width: 100%;
+}
+
+#News .Product article .show a
+{
+	background-image: linear-gradient(to right, #e65100, #fb8c00);
+	width: 100%;
+	text-align: center;
+	color: var(--white);
+	border-radius: 0px 0px 3px 3px;
+	padding: 5px;
+	font-size: 13px;
+	text-decoration: none;
+	display: block;
+
+	visibility: hidden;
+}
+
+#News .Product article:hover .show a
+{
+
+	visibility: visible;
+}
+
+#News .owl-nav,
+#News .owl-dots
+{
+	display: none;
+}
+/*--- #Fin NEWS ---*/
+
+.voir
+{
+	margin-top: 20px;
+}
+
+.text .voir a
+{
+	background-image: linear-gradient(to right, #e65100, #fb8c00);
+	color: var(--grey_2);
+	padding: 5px 25px;
+	border-radius: 3px;
+	text-decoration: none;
+
+	transition: .3s ease-in-out;
+}
+.text .voir a:hover
+{
+	color: var(--white);
+}
+
+.Cart_plus_favori
+{
+	color: var(--grey);
+
+	transition: .3s ease-in-out;
+}
+.Cart_plus_favori:hover
+{
+	color: var(--orange_f);
+}
+
+
+/** MEDIA QUERY **/
+    /**-- Ecran(<991px) --**/
+@media all and (max-width: 991px) 
+{
+	
+	#News .Product article .show a
+	{
+		background-image: linear-gradient(to right, #e65100, #fb8c00);
+		width: 100%;
+		text-align: center;
+		color: var(--white);
+		border-radius: 0px 0px 3px 3px;
+		padding: 5px;
+		font-size: 13px;
+		text-decoration: none;
+		display: block;
+
+		visibility: visible;
+	}
+
+}
+    /**-- #FIN Ecran(<991px) --**/
+
+    /**-- Ecran(<771px) --**/
+@media all and (max-width: 771px) 
+{	
+	#News .owl-dots
+	{
+		margin-top: -30px;
+		margin-bottom: 50px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+    /**-- #FIN Ecran(<991px) --**/
+/** #FIN MEDIA QUERY **/

@@ -1,0 +1,94 @@
+
+
+#Titre .Seach form
+{
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+#Titre .Seach form label
+{
+	border: 1px solid var(--grey);
+	border-right: none;
+	height: 35px;
+	width: 35px;
+	border-radius: 3px 0px 0px 3px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Titre .Seach form input
+{
+	border: 1px solid var(--grey);
+	border-left: none;
+	background: var(--grey_2);
+	border-radius: 0px 3px 3px 0px;
+	width: 300px;
+	height: 35px;
+}
+
+
+
+
+/** MEDIA QUERY **/
+    /**-- Ecran(<991px) --**/
+@media all and (max-width: 991px) 
+{
+	section 
+	{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+    /**-- #FIN Ecran(<991px) --**/
+
+    /**-- Ecran(<771px) --**/
+@media all and (max-width: 771px) 
+{
+	#Titre .Seach form input
+	{
+		width: 200px;
+	}
+
+	#Titre a
+	{
+		display: none;
+	}
+}
+
+    /**-- Ecran(<500px) --**/
+@media all and (max-width: 500px) 
+{
+	#Titre .Seach form input
+	{
+		width: 150px;
+	}
+	
+	#Article 
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#Article .Content .aside .subtitle
+	{
+		display: none;
+	}
+
+	section #Content #Article .Other
+	{
+		display: flex;
+		flex-direction: row;
+		margin-top: 20px;
+	}
+
+	section #Content #Article .Other .price
+	{
+		font-size: 17px;
+	}
+}
+    /**-- #FIN Ecran(<500px) --**/
+/** #FIN MEDIA QUERY **/

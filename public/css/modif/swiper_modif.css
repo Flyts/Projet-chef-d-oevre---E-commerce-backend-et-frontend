@@ -1,0 +1,190 @@
+
+header #Header_image
+{  
+    background: #fff;
+    margin-left: -1116px;
+    padding: 0; 
+}
+
+
+.swiper-container 
+{
+    margin: 0;
+    width: 100%;
+}
+
+.swiper-lien
+{
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    transition: 0.5s ease-in-out;
+}
+.swiper-slide
+{
+    border-top: 1px solid #333;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    cursor: default; 
+}
+
+.swiper-button-prev
+{
+    margin-left: 1116px;
+}
+
+
+
+
+/** Swiper 2 **/
+
+.swiper-container_2 .swiper-lien
+{
+    background-color: rgba(0,0,0,0.3);
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-sld_2
+{
+    border-top: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    cursor: default; 
+}
+
+.swiper-btn-next span
+{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #797979;
+    display: inline-block;
+    cursor: pointer;
+    
+    transition: color 0.5s ease-in-out;
+}
+
+.swiper-btn-prev span
+{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #797979;
+    display: inline-block;
+    cursor: pointer;
+    
+    transition: color 0.5s ease-in-out;
+}
+
+.swiper-btn-next span:hover, .swiper-btn-prev span:hover 
+{
+    color: #d11229;
+}
+
+
+
+
+
+
+
+
+
+#cart 
+{
+	position: relative;
+	height: 350px;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0 5px 5px rgba(0,0,0.5);
+}
+
+#cart .poster
+{
+	position: relative;
+	overflow: hidden;
+}
+#cart .poster:before
+{
+	content: '';
+	position: absolute;
+	bottom: -250px; 
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, #000 50%, transparent);
+	z-index: 1;
+
+	transition: 0.5s ease-in-out;
+}
+#cart:hover .poster:before
+{
+	bottom: 0;
+}
+
+#cart .poster .Img
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 350px;
+	width: 100%;
+
+	transition: 0.5s ease-in-out;
+}
+#cart:hover .poster .Img
+{
+	filter: blur(2px);
+	transform: translateY(-50px);
+}
+
+#cart .poster .Img .black_font
+{
+	background-color: rgba(0,0,0,0.1);
+	height: 350px;
+    width: 100%;
+    display: block;
+}
+
+#cart .details
+{
+	position: absolute;
+	bottom: -250px; 
+	left: 0;
+	padding: 20px;
+	width: 100%;
+	height: 80%;
+	box-sizing: border-box;
+	z-index: 2;
+
+	transition: 0.5s ease-in-out;
+
+
+	text-align: justify;
+}
+
+#cart:hover .details
+{
+	bottom: 0;
+	color: #ffffff; 
+}
+
+.details h4
+{
+	color: #ffffff;
+	text-align: center;
+}
+
+
+

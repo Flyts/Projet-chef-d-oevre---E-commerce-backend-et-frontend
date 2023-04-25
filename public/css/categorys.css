@@ -1,0 +1,549 @@
+
+header #Welcome
+{
+	display: none;
+}
+
+section
+{
+	padding: 0;
+	padding-top: 90px;
+}
+
+section #Nav_category
+{
+	position: fixed;
+	top: 70px;
+	left: 0;
+	
+	background-color: var(--bluegrey);
+	width: 100%;
+	height: 40px;
+	margin-bottom: 50px;
+	padding: 0 5%;
+
+	display: flex;
+	align-items: center;
+
+	z-index: 8;
+}
+
+
+#Nav_category ul
+{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#Nav_category ul li
+{
+	padding: 0 15px;
+	margin: 0;
+	height: 40px;
+	margin-right: 30px;
+	list-style: none;
+	cursor: pointer;
+	color: var(--grey_c);
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	transition: .3s ease-in-out;
+}
+#Nav_category ul li:hover
+{
+	background-color: var(--grey_c);
+	color: var(--bluegrey_f);
+}
+
+#Nav_category ul li .Affiche
+{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+
+	background-color: var(--grey_c);
+	width: auto;
+	box-shadow: 0 8px 8px 3px rgba(0,0,0,0.2);
+	visibility: hidden;
+	transform: translateY(20px);
+	cursor: default;
+	padding: 25px 25px;
+
+	transition: transform .3s ease;
+
+	z-index: 2;
+}
+
+#Nav_category ul li:hover .Affiche 
+{
+	visibility: visible;
+	transform: translateY(0px);
+
+	display: flex;
+} 
+
+#Nav_category ul li .Affiche:hover 
+{
+	visibility: visible;
+	transform: translateY(0px);
+} 
+
+
+
+#Nav_category ul li .Affiche .par_produit
+{
+	border-right: 1px solid var(--grey_2); 
+	padding: 0;
+} 
+
+#Nav_category ul li .Affiche .par_produit h5
+{
+	margin: 0;
+	padding: 0;
+	color: var(--bluegrey_f);
+	text-transform: uppercase;
+	margin-bottom: 20px;
+
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#Nav_category ul li .Affiche .par_produit .contents
+{
+	display: flex;
+	justify-content: space-between;
+}  
+
+#Nav_category ul li .Affiche .par_produit .contents nav
+{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+} 
+
+#Nav_category ul li .Affiche .par_produit .contents nav:last-child
+{
+	margin-left: 150px;
+	margin-right: 25px;
+} 
+#Nav_category ul li .Affiche .par_produit .contents nav:first-child
+{
+	margin-left: 0;
+	margin-right: 0;
+} 
+
+#Nav_category ul li .Affiche .par_produit .contents nav a
+{
+	color: var(--bluegrey_f);
+	text-decoration: none;
+	width: auto;
+	margin: 5px 0;
+
+	transition: color .3s ease-in-out;
+} 
+#Nav_category ul li .Affiche .par_produit .contents nav a:hover
+{
+	color: var(--orange_f);
+} 
+
+
+#Nav_category ul li .Affiche .my_images 
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+
+#Nav_category ul li .Affiche .my_images .contents a
+{
+	margin-left: 25px;
+	display: inline-block;
+} 
+
+#Nav_category ul li .Affiche .my_images .contents a .imgs
+{
+	border: 1px solid var(--grey_2);
+	height: 260px;
+	width: 200px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+
+#Nav_category ul li .Affiche .my_images .contents a .imgs .int
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain; 
+
+	height: 245px;
+	width: 185px;
+}
+/* 
+#Nav_category .OtherMenu
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#Nav_category .OtherMenu a
+{
+	color: var(--grey_2);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#Nav_category .OtherMenu .active
+{
+	color: var(--orange_f);
+}
+
+#Nav_category .OtherMenu a:last-child
+{
+	margin-left: 20px;
+}
+ */
+
+
+
+
+#Banner 
+{
+}
+
+#Banner .Image
+{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 0 5%;
+	margin-top: -20px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#Banner .Image h4
+{
+	background-color: var(--bluegrey_f);
+	color: var(--orange_f);
+	padding: 5px 10px;
+	margin-bottom: 30px;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+#Banner .Image .Part
+{
+	color: var(--bluegrey_f);
+	text-decoration: none;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#Banner .Image .Part .imgs
+{
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	height: 250px;
+	width: 200px;
+}
+
+#Banner .Image .Part .titre
+{
+	border-top: 1px solid var(--grey);
+	background-color: var(--white);
+	width: 195px;
+	font-size: 13px;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+#Banner .owl-nav,
+#Banner .owl-dots
+{
+	display: none;
+}
+
+
+
+
+
+
+#Presentation
+{
+	padding: 0 5%;
+}
+
+#Presentation .First .part
+{
+	margin-bottom: 40px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#Presentation .First .part .img
+{
+	position: relative;
+	border: 2px solid var(--grey);
+	width: 260px;
+	height: 360px;
+	overflow: hidden;
+
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition: .5s ease-in-out;
+
+}
+#Presentation .First .part .img:hover
+{
+	border: 2px solid var(--orange_f);
+}
+
+#Presentation .First .part .img .int
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+
+	width: 200px;
+	height: 300px;
+}
+
+#Presentation .First .part .img .text
+{
+	position: absolute;
+	left: 0;
+	bottom: -500px;
+    background-image: linear-gradient(to top, rgba(255,255,255,0.8) 60%, rgba(0,0,0,0) 100%);
+	color: var(--bluegrey_f);
+	width: 100%;
+	text-align: center;
+	padding: 15px 15px;
+	padding-top: 60px;
+	opacity: 0;
+	visibility: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	transition: .5s ease-in-out;
+}
+#Presentation .First .part .img:hover .text
+{
+	bottom: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+#Presentation .First .part .img .text span
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+#Presentation .First .part .img .text span:last-child
+{
+	color: var(--blue);
+	margin-top: 10px;
+}
+
+#Presentation .First .part .img .text span:last-child i
+{
+	color: var(--grey);
+	font-size: 12px;
+	text-decoration: line-through;
+}
+
+#Presentation .First .part .img .text span:last-child strong
+{
+	color: var(--orange_f);
+}
+
+
+
+/** MEDIA QUERY **/
+    /**-- Ecran(<991px) --**/
+@media all and (max-width: 991px) 
+{
+	#Nav_category ul li .Affiche .my_images .contents a:last-child
+	{
+		display: none;
+	} 
+}
+    /**-- #FIN Ecran(<991px) --**/
+
+    /**-- Ecran(<771px) --**/
+@media all and (max-width: 771px) 
+{
+	section #Nav_category
+	{
+		position: fixed;
+		top: 0;
+		left: -1000px;
+		
+		background-color: var(--bluegrey);
+		width: 300px;
+		height: 100vh;
+		margin-bottom: 0;
+		padding: 0 0;
+		box-shadow: 0 0 10px 5px rgba(0,0,0,0.4);
+		overflow-y: auto;
+		overflow-x: hidden;
+
+		display: flex;
+		flex-direction: column;
+
+		transition: .3s ease-in-out;
+
+		z-index: 6;
+	}
+	.Active_Secondaire section #Nav_category
+	{
+		left: 0;
+	}
+
+	#Nav_category ul
+	{
+		padding: 0;
+		margin-top: 70px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#Nav_category ul li
+	{
+		position: relative;
+		margin: 0;
+		padding: 0;
+		height: 40px;
+		width: 100%;
+		margin-right: 0;
+		list-style: none;
+		cursor: pointer;
+		color: var(--grey_c);
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		transition: .3s ease-in-out;
+	}
+	#Nav_category ul li:hover
+	{
+		color: var(--bluegrey_f);
+		background-color: rgba(255,255,255,0);
+		height: auto;
+	}
+
+	#Nav_category ul li span
+	{
+		padding: 20px 20px;
+		width: 100%;
+		height: 40px;
+
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	#Nav_category ul li:hover span
+	{
+		background-color: rgba(255,255,255,0.7);
+		height: 40px;
+		width: 100%;
+	}
+
+	#Nav_category ul li .Affiche
+	{
+		position: relative;
+		top: 0px;
+		left: 0;
+
+		background-color: rgba(255,255,255,0.4);
+		width: 100%;
+		box-shadow: none;
+		visibility: hidden;
+		transform: translateY(0);
+		cursor: default;
+		margin: 0;
+		padding: 0;
+
+		display: flex;
+		flex-direction: column;
+
+		transition: transform .3s ease;
+
+		z-index: 2;
+	}
+
+	#Nav_category ul li:hover .Affiche 
+	{
+		visibility: visible;
+		transform: translateY(0px);
+		height: auto;
+
+		display: flex;
+	} 
+
+	#Nav_category ul li .Affiche .par_produit h5 
+	{
+		display: none;
+	} 
+
+	#Nav_category ul li .Affiche .par_produit .contents
+	{
+		display: flex;
+		flex-direction: column;
+	} 
+
+	#Nav_category ul li .Affiche .par_produit .contents nav:last-child
+	{
+		margin: 0;
+		padding: 0;
+	} 
+
+	#Nav_category ul li .Affiche .par_produit .contents nav a
+	{
+		width: 100%;
+		padding: 5px 40px;
+		margin: 0;
+
+		display: inline-block;
+	} 
+
+	#Nav_category ul li .Affiche .my_images 
+	{
+		display: none;
+	} 
+}
+    /**-- #FIN Ecran(<991px) --**/
+/** #FIN MEDIA QUERY **/

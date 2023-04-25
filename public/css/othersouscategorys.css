@@ -1,0 +1,260 @@
+section
+{
+	padding: 0 5%;
+	padding-top: 80px;
+}
+
+
+#News .Trier .input
+{
+	margin-bottom: 20px;
+	padding-left: 10px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.Trier .input .content
+{
+	position: relative;
+
+	margin-right: 30px;
+	width: 150px;
+}
+.Trier .input .content:last-child
+{
+	margin-right: 0px;
+}
+
+.Trier .input .content span
+{
+	position: relative;
+
+	border: 1px solid var(--grey);
+	padding: 0 10px;
+	height: 35px;
+	border-radius: 3px;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	z-index: 3;
+}
+
+.Trier .input .content .navs
+{
+	position: absolute;
+	top: 40px;
+	left: 0;
+
+	background-color: var(--grey_2);
+	box-shadow: 0 5px 8px 3px rgba(0,0,0,0.4);
+	width: 300px;
+	padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(15px);
+
+	z-index: 3;
+
+	transition: transform .2s ease-in-out;
+}
+
+.Trier .input .content .navs li
+{
+	background-color: var(--white);
+	border-radius: 3px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	height: 38px;
+	list-style: none;
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.Trier .input .content .navs li:last-child
+{
+	margin-bottom: 0px;
+}
+
+.Trier .input .content .navs li strong
+{
+	border: 1px solid var(--grey);
+	height: 17px;
+	width: 17px;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Trier .input .content .navs li strong i
+{
+	background-color: var(--grey);
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	visibility: hidden;
+
+	display: inline-block;
+}
+#News #Close_Trie
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-color: rgba(0,0,0,0);
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+
+	display: none;
+}
+
+
+
+
+
+.Trier .input .selected span
+{
+	border: 1px solid var(--grey);
+	padding: 0 10px;
+	height: 35px;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px 3px rgba(33,150,243,0.3);
+	color: var(--blue);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Trier .input .selected .navs
+{
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(5px);
+}
+
+.Trier .input .content .navs .choise
+{
+	background-color: var(--blue);
+	color: var(--white);
+}
+
+.Trier .input .content .navs .choise strong
+{
+	border: 1px solid var(--white);
+}
+
+.Trier .input .content .navs .choise strong i
+{
+	background-color: var(--white);
+	visibility: visible;
+}
+
+.close_active #News #Close_Trie
+{
+	display: block;
+}
+
+
+
+#News .Value_Trie
+{
+	margin-bottom: 40px;
+	padding-left: 10px;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.Value_Trie .part 
+{
+	margin-right: 40px;
+}
+
+.Value_Trie .part span
+{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.Value_Trie .part span:last-child
+{
+	text-transform: capitalize;
+	font-weight: normal;
+	color: var(--orange_f);
+	margin-left: 5px;
+}
+
+
+
+
+
+#News .icons
+{
+	color: var(--grey);
+	cursor: pointer;
+
+	transition: .3s ease-in-out;
+}
+#News .icons:hover
+{
+	color: var(--orange_f);
+}
+
+
+
+
+#Hide_results
+{
+	width: 100%;
+	margin-top: 30px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#Hide_results .Result_count
+{
+}
+
+#Hide_results .Chargement
+{
+	background-color: var(--grey);
+	height: 2px;
+	width: 150px; 
+	border-radius: 3px;
+
+	margin-top: 5px;
+}
+#Hide_results .Chargement .int
+{
+	background-color: var(--orange_f);
+	height: 100%;
+	width: 0%; 
+	border-radius: 3px;
+}
+
+#Hide_results button
+{
+	border: 2px solid var(--grey);
+	background: none;
+	padding: 10px 20px;
+	color: var(--bluegrey_f);
+	font-weight: bold;
+	text-transform: uppercase;
+
+	margin-top: 20px;
+	
+	transition: .3s ease-in-out;
+}

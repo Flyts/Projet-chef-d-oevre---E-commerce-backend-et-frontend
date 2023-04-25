@@ -1,0 +1,54 @@
+@extends('layouts/master', ['titre' => 'Payement'])
+
+@push('meta')
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+@endpush
+
+@push('stylesheet')
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/payement.css') }}">
+@endpush
+
+@section('Body_Page')
+    <section>
+        <div id="Titre">
+            <h3>Paiement</h3>
+            <!-- <a href="{{ route('cart.alldestroy') }}"><span>Annuller mon payement</span></a> -->
+        </div>
+
+        <div id="Message">
+            <div class="alert alert-danger" role="alert" id="Alert">
+                
+            </div>
+        </div>
+
+        <div id="Article" class="col-xs-12">
+            <form action="{{ route('payement.store') }}" method="post" id="Payement_form">
+                @csrf
+
+                <div class="Part col-xs-12 col-xs-12">
+                    <div class="input_label">
+                        <label for="Carte"><span class="fa fa-credit-card" id="Label"></span></label>
+                        <input type="text" name="carte_credit" id="Carte" placeholder="Numéro de carte">
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" name="date" placeholder="MM / AA">
+                        <input type="text" name="cvc" placeholder="CVC">
+                    </div>
+                </div>
+
+                <div class="Part col-xs-12 col-xs-12">
+                    <button type="submit">
+                        <span id="Submit">Procéder au paiement</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+@endsection
+
+
+@push('script')
+    <script type="module" src="{{ asset('js/ajax.js') }}"></script>
+@endpush

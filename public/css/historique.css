@@ -1,0 +1,90 @@
+section #Article
+{
+	padding: 0;
+	display: block;
+}
+
+#Article .Titre
+{
+	background-color: var(--grey_c);
+	border-radius: 3px 3px 0 0;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+	font-size: 16px;
+}
+
+#Article .Titre .part:last-child
+{
+	font-weight: bold;
+}
+
+#Article .Orders
+{
+	margin: 20px 0;
+	padding: 0px 20px;
+}
+
+#Article .Orders .body
+{
+	border-bottom: 1px solid var(--grey_2);
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	display: flex;
+	align-items: center;
+}
+
+#Article .Orders .body:last-child
+{
+	border: none;
+}
+
+#Article .Orders .body .photo
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+
+	height: 100px;
+	width: 100px;
+}
+
+#Article .Orders .body .valeur
+{
+	margin-left: 20px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#Article .Orders .body .valeur span
+{
+	margin-bottom: 10px;
+}
+
+#Article .Orders .body .valeur span:first-child
+{
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+/**-- Ecran(<771px) --**/
+@media all and (max-width: 771px) 
+{
+
+	#Article .Titre
+	{
+		display: flex;
+		flex-direction: column;
+	}
+}

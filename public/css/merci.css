@@ -1,0 +1,50 @@
+
+/*-- HIDDE PART ---*/
+header #Welcome,
+header #Down
+{
+	display: none;
+}
+/*-- #Fin HIDDE PART ---*/
+
+
+
+section 
+{
+	padding: 0 10%;
+	margin-top: 70px;
+	padding-top: 25px;
+
+	color: var(--bluegrey_f);
+}
+
+section #Titre
+{
+	margin-bottom: 15px;
+}
+
+
+section #Article
+{
+	background-color: var(--white);
+	width: 100%;
+	padding: 15px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	color: var(--bluegrey_f);
+	font-weight: normal;
+
+	text-align: center;
+}
+
+section #Article h1
+{
+	font-size: 40px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+section #Article h4
+{
+	font-weight: normal;
+}

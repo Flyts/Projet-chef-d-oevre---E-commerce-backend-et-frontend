@@ -1,0 +1,50 @@
+#Article .Part .int .sommes
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#Article .Part .int .sommes span
+{
+	margin-bottom: 15px;
+}
+
+#Article .Part .int form button
+{
+	border: none;
+	background-color: var(--bluegrey_f);
+	padding: 7px 0;
+	text-align: center;
+	border-radius: 3px;
+	color: var(--orange_f);
+	margin-top: 20px;
+	width: 100%;
+
+	transition: .3s ease-in-out;
+}
+
+#Article .Part .int h5
+{
+	color: var(--red);
+	font-weight: bold;
+	text-align: center;
+}
+
+#Article .Part .int .lien
+{
+	text-align: center;
+}
+
+#Article .Part .int .lien a
+{
+	border: none;
+	background-color: var(--bluegrey_f);
+	padding: 7px 20px;
+	text-align: center;
+	border-radius: 3px;
+	color: var(--grey_2);
+	margin-top: 30px;
+	width: 100%;
+
+	transition: .3s ease-in-out;
+}

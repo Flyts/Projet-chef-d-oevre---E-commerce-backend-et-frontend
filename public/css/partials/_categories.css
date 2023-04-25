@@ -1,0 +1,71 @@
+header #Welcome .Categories
+{
+	border: 1px solid var(--grey);
+	width: 300px;
+}
+
+#Welcome .Categories .titre
+{
+	background-color: var(--white);
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	color: var(--bluegrey_f);
+	text-transform: uppercase;
+}
+
+#Welcome .Categories ul
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#Welcome .Categories ul li
+{
+	list-style: none;
+}
+
+#Welcome .Categories ul li a
+{
+	border: 1px solid var(--grey);
+	border-left: none;
+	border-right: none;
+	display: block;
+	padding: 7px 15px;
+	color: var(--grey);
+	text-decoration: none;
+
+	transition: .3s ease-in-out;
+}
+#Welcome .Categories ul li a:hover
+{
+	background-color: rgba(255,255,255,0.1);
+	color: var(--orange_f);
+}
+
+#Welcome .Categories ul li a:first-child
+{
+	border: 1px solid var(--grey);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+#Welcome .Categories ul li a:last-child
+{
+	border: none;
+	border-top: 1px solid var(--grey);
+}
+
+#Welcome .Categories ul li a span
+{
+	margin-right: 10px;
+	width: 20px;
+	text-align: center;
+
+	transition: .3s ease-in-out;
+}
+#Welcome .Categories ul li a:hover span
+{
+	color: var(--grey_2);
+}

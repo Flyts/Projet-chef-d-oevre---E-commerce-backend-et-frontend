@@ -1,0 +1,35 @@
+header nav ul li
+{
+	position: relative;
+}
+
+header nav ul li #Affiche
+{
+	position: absolute;
+	top: 0px;
+	left: 300px;
+
+	background-color: var(--white);
+	height: 200px;
+	width: 500px;
+	box-shadow: 0 0 8px 3px var(--grey_f);
+	visibility: hidden;
+	transform: translateX(10px);
+
+	transition: transform .2s ease;
+
+	z-index: 2;
+}
+
+header nav ul li:hover #Affiche 
+{
+	visibility: visible;
+	transform: translateX(0px);
+} 
+
+header nav ul li #Affiche:hover 
+{
+	visibility: visible;
+	transform: translateX(0px);
+} 
+

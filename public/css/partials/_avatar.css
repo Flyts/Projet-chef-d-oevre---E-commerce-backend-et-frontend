@@ -1,0 +1,124 @@
+#Avatar
+{
+	position: fixed;
+	top: 78px;
+	right: 5%;
+	width: 250px;
+	color: var(--bluegrey_f);
+	font-family: sans-serif;
+	transform: translateY(20px);
+	visibility: hidden;
+	opacity: 0;
+
+	border-radius: 3px;
+	background-color: var(--white);
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+
+	z-index: 4;
+
+	transition: .3s ease-in-out;
+}
+.Avatar_active #Avatar
+{
+	transform: translateY(0);
+	visibility: visible;
+	opacity: 1;
+}
+
+#Avatar .Name
+{
+	border-bottom: 1px solid var(--grey_2);
+	display: block;
+	margin: 10px 10px;
+	padding-bottom: 10px;
+	font-size: 17px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+#Avatar .ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#Avatar .ul .part
+{
+	border-bottom: 1px solid var(--grey_2);
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+#Avatar .ul li
+{
+	list-style: none;
+}
+
+#Avatar .ul li a
+{
+	padding: 10px 20px;
+	display: block;
+	color: var(--bluegrey_f);
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 15px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	transition: .3s ease-in-out;
+}
+#Avatar .ul li a:hover
+{
+	background-color: var(--grey_2);
+	color: var(--bluegrey_f);
+}
+
+#Avatar .ul li a span
+{
+	color: var(--orange_f);
+	margin-right: 15px;
+}
+
+
+#Avatar .ul li .active
+{
+	background-color: var(--bluegrey_f);
+	padding: 10px 20px;
+	display: block;
+	color: var(--grey_2);
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 15px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#Avatar .ul li .active:hover
+{
+	background-color: var(--bluegrey_f);
+	color: var(--grey_2);
+}
+
+
+
+.Avatar_active #Avatar_black
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-color: rgba(0,0,0,0.3);
+	height: 100vh;
+	width: 100%;
+
+	z-index: 9;
+}
+
+.avatar_Badge
+{
+	background-color: var(--grey_2);
+	color: var(--orange_f);
+}

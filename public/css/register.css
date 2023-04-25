@@ -1,0 +1,142 @@
+
+section #News .Product article
+{
+	background: none;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section #News .Product article:hover
+{
+	box-shadow: none;
+}
+
+section #News .Product article form
+{
+	background-color: var(--bluegrey_f);
+	display: inline-block;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 3px;
+	color: var(--grey);
+}
+
+section #News .Product article form h3
+{
+	margin: 0;
+	color: var(--grey_2);
+	padding: 0;
+	margin-bottom: 25px;
+	font-size: 22px;
+}
+
+section #News .Product article form input
+{
+	border: 1px solid var(--grey);
+	background: none;
+	padding: 7px 10px;
+	border-radius: 3px;
+	width: 100%;
+	font-size: 14px;
+
+	transition: .3s ease-in-out;
+}
+section #News .Product article form input:focus
+{
+	border: 1px solid var(--orange_f);
+	color: var(--grey_2);
+}
+
+section #News .Product article form .input_mono
+{
+	display: block;
+	margin-bottom: 10px;
+	width: 400px;
+}
+
+section #News .Product article form .double_input
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	width: 400px;
+}
+section #News .Product article form .double_input .int
+{
+	width: 49%;
+}
+
+section #News .Product article form .btn_connexion
+{
+	margin-top: 30px;
+
+	display: flex;
+	align-items: center;
+}
+
+section #News .Product article form .btn_connexion button
+{
+	border: none;
+	background-color: var(--orange_f);
+	color: var(--grey_2);
+	padding: 5px 15px;
+	border-radius: 3px;
+
+	transition: .3s ease-in-out;
+}
+section #News .Product article form .btn_connexion button:hover
+{
+	background-color: var(--orange_f);
+	color: var(--grey_2);
+}
+
+section #News .Product article form .btn_connexion a
+{
+	color: var(--grey); 
+	margin-left: 15px;
+}
+section #News .Product article form .btn_connexion a:hover
+{
+	color: var(--grey_2); 
+}
+
+
+
+.error
+{
+	color: var(--red);
+	font-size: 12px;
+	font-weight: normal;
+	margin-top: 5px;
+}
+section #News .Product article form .errors
+{
+  border: 1px solid rgba(244,67,54,0.6);
+  box-shadow: 0px 0px 0px 3px rgba(244,67,54,0.5);
+}
+
+
+
+
+
+/** MEDIA QUERY **/
+    /**-- Ecran(<991px) --**/
+@media all and (max-width: 991px) 
+{
+	
+}
+    /**-- #FIN Ecran(<991px) --**/
+
+    /**-- Ecran(<771px) --**/
+@media all and (max-width: 771px) 
+{	
+	section #News .Product article form .input_mono,
+	section #News .Product article form .double_input
+	{
+		width: 350px;
+	}
+}
+    /**-- #FIN Ecran(<991px) --**/
+/** #FIN MEDIA QUERY **/

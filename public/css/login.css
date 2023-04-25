@@ -1,0 +1,97 @@
+
+
+section #News .Product article
+{
+	background: none;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section #News .Product article:hover
+{
+	box-shadow: none;
+}
+
+section #News .Product article form
+{
+	background-color: var(--white);
+	display: inline-block;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+
+section #News .Product article form h3
+{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
+	font-size: 22px;
+}
+
+section #News .Product article form .Lable_input
+{
+	display: flex;
+	flex-direction: column;
+}
+
+section #News .Product article form .Lable_input input
+{
+	border: 1px solid var(--grey);
+	width: 350px;
+	margin-top: 15px;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+section #News .Product article form .Label_check
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20px;
+}
+ 
+section #News .Product article form .Label_check input
+{
+	border: 1px solid red;
+	margin: 0;
+}
+ 
+section #News .Product article form .Label_check label
+{
+	margin-left: 5px;
+	margin-bottom: 0;
+}
+
+section #News .Product article form button
+{
+	border: none;
+	background-color: var(--bluegrey_f);
+	color: var(--grey);
+	padding: 5px 15px;
+	border-radius: 3px;
+	margin-top: 20px;
+
+	transition: .3s ease-in-out;
+}
+section #News .Product article form button:hover
+{
+	color: var(--grey_2);
+}
+
+
+.error
+{
+	color: var(--red);
+	font-size: 13px;
+	font-weight: normal;
+	margin-top: 5px;
+	text-align: center;
+}
+.errors
+{
+  border: 1px solid #a1a1a1;
+  box-shadow: 0px 0px 0px 3px rgba(244,67,54,0.4);
+}

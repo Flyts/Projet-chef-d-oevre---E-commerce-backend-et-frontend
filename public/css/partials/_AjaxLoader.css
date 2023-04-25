@@ -1,0 +1,85 @@
+#Ajax_Loader
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-color: rgba(255,255,255,0.7);
+	height: 100vh;
+	width: 100%; 
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+	z-index: 11;
+}
+
+#Ajax_Loader svg
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+
+	animation: rotate 2s linear infinite;
+}
+@keyframes rotate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+#Ajax_Loader svg circle
+{
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke-width: 5;
+	stroke: var(--bluegrey_f);
+	stroke-linecap: round;
+	stroke-dasharray: 450;
+	stroke-dashoffset: 450;
+	transform: translate(5px, 5px);
+
+	animation: animate 4s linear infinite;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+		stroke-dashoffset: 450;
+	}
+	50%
+	{
+		stroke-dashoffset: 0;
+	}
+	50.1%
+	{
+		stroke-dashoffset: 880;
+	}
+}
+
+#Ajax_Loader .image
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	background-image: url(../../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+
+	width: 80px;
+	height: 80px;
+
+	z-index: 12;
+}

@@ -1,0 +1,425 @@
+
+/*-- HIDDE PART ---*/
+header #Welcome,
+header #Down
+{
+	display: none;
+}
+/*-- #Fin HIDDE PART ---*/
+
+
+section 
+{
+	padding: 0 10%;
+	margin-top: 70px;
+	padding-top: 25px;
+
+	color: var(--bluegrey_f);
+}
+
+section #Titre
+{
+	margin-bottom: 15px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section #Titre h3
+{
+	text-transform: uppercase;
+}
+
+section #Titre a
+{
+	border: none;
+	background-color: var(--bluegrey_f);
+	padding: 5px 15px; 
+	border-radius: 3px;
+	color: var(--grey);
+	text-decoration: none;
+
+	transition: .3s ease-in-out;
+}
+section #Titre a:hover
+{
+	color: var(--orange_f);
+}
+
+
+section #Message
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 0 15px;
+	margin-bottom: 5px;
+	width: 40%;
+	display: block;
+
+	z-index: 2;
+}
+
+
+section #Vide
+{
+	width: 100%;
+	padding: 15px;
+	border-radius: 3px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section #Article
+{
+	background-color: var(--white);
+	width: 100%;
+	padding: 15px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	transform: translateY(0px);
+
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+
+	transition: .3s ease-in-out;
+}
+section #Article:hover
+{
+	box-shadow: 0 0 5px 3px rgba(0,0,0,0.15);
+	transform: translateY(-5px);
+}
+
+section #Article .Content
+{
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+section #Article .Content .quantity
+{
+	margin-right: 40px;
+
+	display: flex;
+	align-items: center;
+}
+
+section #Article .Content .quantity .add
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* section #Article .Content .quantity .add span
+{
+	font-size: 13px;
+	font-weight: normal;
+	margin-bottom: 5px;
+} */
+
+section #Article .Content .quantity .add input
+{
+	border: 1px solid var(--bluegrey_f);
+	padding: 1px 5px;
+	border-radius: 3px;
+	width: 50%;
+}
+
+section #Article .Content .aside
+{
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+section #Article .Content .aside .photo
+{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-right: 30px;
+
+	height: 80px;
+	width: 80px;
+}
+
+section #Article .Content .aside .text
+{
+	display: flex;
+	flex-direction: column;
+}
+
+section #Article .Content .aside .text span:first-child
+{
+	font-weight: bold;
+	font-size: 15px;
+	color: var(--bluegrey_f);
+}
+
+section #Article .Content .aside .text span
+{
+	font-size: 14px;
+	color: var(--grey);
+}
+
+section #Article .Content .aside .text .stock
+{
+	color: var(--green);
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+section #Article .Content .aside .text .stock span
+{
+	color: var(--green);
+	font-size: 12px;
+	font-weight: normal;
+	margin-right: 5px;
+}
+
+
+section #Article .Other
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section #Article .Other span
+{
+	font-weight: bold;
+}
+
+section #Article .Other form button
+{
+	border: none;
+	background: none; 
+	font-weight: normal;
+	font-size: 17px;
+}
+
+
+
+section #Total
+{
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+}
+
+section #Total h4
+{
+	text-transform: uppercase;
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+}
+
+section #Total .int
+{
+	background-color: var(--white);
+	width: 100%;
+	padding: 15px;
+	border-radius: 3px;
+	margin-top: 15px;
+}
+
+
+section #Total .Coupon_code
+{
+	margin-bottom: 30px;
+	padding: 0px;
+	padding-right: 15px;
+}
+
+section #Total .Coupon_code .int form
+{
+	border: 1px solid var(--grey);
+	border-radius: 3px;
+	padding: 2px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+section #Total .Coupon_code .int form input
+{
+	border: none;
+	border-radius: 3px;
+	padding: 5px 10px;
+	width: 70%;
+}
+
+section #Total .Coupon_code .int form button
+{
+	border: none;
+	background-color: var(--bluegrey_f);
+	border-radius: 3px;
+	padding: 5px 10px;
+	color: var(--grey);
+
+	transition: .3s ease-in-out;
+}
+section #Total .Coupon_code .int form button:hover
+{
+	color: var(--grey_2);
+}
+section #Total .Coupon_code .int form button span
+{
+	color: var(--orange_f);
+	margin-right: 5px;
+}
+
+
+section #Total .Recapitulatif
+{
+	margin-bottom: 30px;
+	padding: 0px;
+	padding-left: 15px;
+}
+
+section #Total .Recapitulatif .int .part
+{
+	margin-bottom: 15px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+section #Total .Recapitulatif .int .part .one
+{
+	display: flex;
+	flex-direction: column;
+}
+
+section #Total .Recapitulatif .int .part .one span:first-child
+{
+	font-weight: bold;
+}
+
+section #Total .Recapitulatif .int .part .one span:last-child
+{
+	color: var(--grey);
+	font-size: 12px;
+}
+
+section #Total .Recapitulatif .int .part .two
+{
+	font-weight: bold;
+}
+
+section #Total .Recapitulatif .int .total_price
+{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+section #Total .Recapitulatif .int .total_price span
+{
+	font-size: 17px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+section #Total .Recapitulatif .int .Validate
+{
+	margin-top: 30px;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+section #Total .Recapitulatif .int .Validate a
+{
+	border: none;
+	background-color: var(--bluegrey_f);
+	border-radius: 3px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: var(--grey);
+
+	transition: .3s ease-in-out;
+}
+section #Total .Recapitulatif .int .Validate a:hover
+{
+	color: var(--orange_f);
+}
+
+
+
+
+/** MEDIA QUERY **/
+    /**-- Ecran(<991px) --**/
+@media all and (max-width: 991px) 
+{
+	section #Total .Coupon_code
+	{
+		padding-right: 0;
+		margin-bottom: 40px;
+	}
+
+	section #Total .Recapitulatif
+	{
+		padding-left: 0;
+		margin-bottom: 40px;
+	}
+
+}
+    /**-- #FIN Ecran(<991px) --**/
+
+    /**-- Ecran(<771px) --**/
+@media all and (max-width: 771px) 
+{
+	
+	section #Article .Content .quantity .add input
+	{
+		width: 100%;
+	}
+
+	section #Article .Content .quantity
+	{
+		margin-right: 10px;
+		width: 70px;
+
+		display: flex;
+		align-items: center;
+	}
+
+	section #Article .Content .aside .photo
+	{
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-right: 10px;
+
+		height: 80px;
+		width: 80px;
+	}
+
+
+	section #Total .Coupon_code .int form input
+	{
+		border: none;
+		border-radius: 3px;
+		padding: 5px 10px;
+		width: 60%;
+	}
+}
+    /**-- #FIN Ecran(<991px) --**/
+/** #FIN MEDIA QUERY **/

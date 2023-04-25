@@ -1,0 +1,191 @@
+section #Article
+{
+	display: inline-block;
+}
+
+section #Article:hover
+{
+	transform: none;
+	box-shadow: none;
+}
+
+#Article .Part
+{
+	padding: 0;
+	margin: 0;
+	padding: 15px; 
+}
+
+#Article .Part .int
+{
+	border: 1px solid var(--grey);
+	padding: 15px; 
+	border-radius: 3px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+#Article .Part .int .content
+{
+	width: 50%;
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+#Article .Part .int .content:first-child
+{
+	border-right: 1px solid var(--grey);
+
+	display: flex;
+	justify-content: flex-start;
+}
+
+#Article .Part .int .content span:first-child
+{
+	margin-right: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+#Article .Part .appro
+{
+	border: 1px solid var(--grey);
+	padding: 15px; 
+	border-radius: 3px;
+}
+
+#Article .Part .appro .content
+{
+	padding: 0;
+	border: none;
+}
+
+#Article .Part .appro .content .titre
+{
+	border-bottom: 1px solid var(--grey_2);
+	padding-bottom: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#Article .Part .appro .content .process
+{
+	margin-top: 20px;
+}
+
+#Article .Part .appro .content .process ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#Article .Part .appro .content .process ul li
+{
+	margin: 0;
+	padding: 0;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	list-style: lower-norwegian;
+}
+
+#Article .Part .appro .content .process ul li .succes
+{
+	color: var(--green);
+	font-weight: bold;
+}
+
+#Article .Part .appro .content .process ul li .orange
+{
+	color: var(--orange_f);
+	font-weight: bold;
+}
+
+
+#Article .Part .appro .content .process form
+{
+	display: block;
+	margin-top: 40px;
+}
+
+#Article .Part .appro .content .process form input
+{
+	border: 1px solid var(--grey);
+	color: var(--grey_b);
+	padding: 10px 20px;
+	width: 100%;
+	border-radius: 3px;
+
+	display: block;
+	transition: .3s ease-in-out;
+}
+#Article .Part .appro .content .process form input:focus
+{
+	border: 1px solid var(--orange_f);
+	color: var(--grey_b);
+}
+
+
+#Article .Part .appro .content .process form button
+{
+	border: none;
+	background-color: var(--bluegrey_f);
+	padding: 7px 0;
+	text-align: center;
+	border-radius: 3px;
+	color: var(--orange_f);
+	margin-top: 20px;
+	width: 100%;
+
+	transition: .3s ease-in-out;
+}
+
+
+
+
+
+/** MEDIA QUERY **/
+    /**-- Ecran(<991px) --**/
+@media all and (max-width: 991px) 
+{
+}
+    /**-- #FIN Ecran(<991px) --**/
+
+    /**-- Ecran(<771px) --**/
+@media all and (max-width: 771px) 
+{
+
+	#Article .Part .int
+	{
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#Article .Part .int .content
+	{
+		width: 100%;
+		margin-bottom: 15px;
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#Article .Part .int .content:first-child
+	{
+		border-right: none;
+
+		display: flex;
+		justify-content: center;
+	}
+}
+    /**-- #FIN Ecran(<991px) --**/
+/** #FIN MEDIA QUERY **/
